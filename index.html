@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Booking </title>
+    <script src="https://kit.fontawesome.com/182b95e3c4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar h-nav bg">
+        <ul class="nav-list vis">
+            <a class="logo" href="#home"><img src="Images/e logo.jpg" alt="logo"></a>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#booking">Booking</a></li>
+            <li><a href="#yourbookings">YourBookings</a></li>
+        </ul>
+        <div class="nav2 vis">
+            <input type="text" name="search" id="search" placeholder="search">
+            <button class="btn search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <button class="login vis">Login</button>
+        <div class="menu"><i class="fa-solid fa-bars" ></i></div>
+
+
+    </nav>
+
+    <div class="wrapper bg">
+        <div class="box">
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span><i class="fa-solid fa-user"></i></span>
+                <input type="text"placeholder="username" required>
+            </div>
+            <div class="input-box">
+                <span><i class="fa-solid fa-lock"></i></span>
+                <input type="password" placeholder="password" required>
+            </div>
+            <div class="forgot">
+                <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    </div>
+
+    <section id="home" class="bg container">
+        <h1 class="slogan">Book your tickets now...!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laborum reprehenderit ut, nam veritatis totam quos ducimus. Obcaecati, modi cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, inventore? Asperiores sint quibusdam quos aliquam unde aut veritatis et magni. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, reiciendis!</p>
+        <div class="home">
+            <div class="images">
+                <img src="Images/concert.jpg" alt="i1" id="image1">
+                <img src="Images/sports.jpg" alt="i2" id="image2">
+                <img src="Images/laughing.png" alt="i3" id="image3">
+            </div>
+            <h2 class="more">and many more...</h2>
+        </div>  
+    </section>
+    <section id="details">
+       <h2 class="title">AVAILABLE EVENTS</h2>
+       <h4 class="title2">Click the event to check details</h4>
+       <p class="title3">Sorry,no events available for this search</p>
+
+       <div class="filter-condition">
+        <span>Sort by Price:</span>
+        <select name="" id="select">
+            <option value="Default">Default</option>
+            <option value="LowToHigh">Low to High</option>
+            <option value="HighToLow">High to Low</option>
+        </select>
+       </div>
+      <div class="events-container">
+        <div class="events" data-name="e-1" data-price="">
+            <img src="Images/music1.png" alt="">
+            <h3>music1</h3>
+            <div class="price">Rs39</div>
+           </div>
+      
+        <div class="events" data-name="e-2" data-price="">
+            <img src="Images/music2.png" alt="">
+            <h3>music2</h3>
+            <div class="price">Rs199</div>
+           </div>
+      
+        <div class="events" data-name="e-3" data-price="">
+            <img src="Images/music3.png" alt="">
+            <h3>music3</h3>
+            <div class="price">Rs699</div>
+           
+      </div>
+        <div class="events" data-name="e-4" data-price="">
+            <img src="Images/comedy1.png" alt="">
+            <h3>comedy1</h3>
+            <div class="price">Rs299</div>
+           
+      </div>
+        <div class="events" data-name="e-5" data-price="">
+            <img src="Images/comedy2.png" alt="">
+            <h3>comedy2</h3>
+            <div class="price">Rs899</div>
+           
+      </div>
+        <div class="events" data-name="e-6" data-price="">
+            <img src="Images/comedy3.png" alt="">
+            <h3>comedy3</h3>
+            <div class="price">Rs499</div>
+           
+      </div>
+        <div class="events" data-name="e-7" data-price="">
+            <img src="Images/sports1.png" alt="">
+            <h3>sports1</h3>
+            <div class="price">Rs399</div>
+           
+      </div>
+        <div class="events" data-name="e-8" data-price="">
+            <img src="Images/sports2.png" alt="">
+            <h3>sports2</h3>
+            <div class="price">Rs109</div>
+           
+      </div>
+        <div class="events" data-name="e-9" data-price="">
+            <img src="Images/sports3.png" alt="">
+            <h3>sports3</h3>
+            <div class="price">Rs799</div>
+           
+      </div>
+    </div>
+    <div class="events-preview">
+        <div class="preview" data-target="e-1">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="Images/music1.png" alt="">
+            <h3>music1</h3>
+            <div class="price"><span class="dark">Price:Rs</span>699</div>
+            <p class="light"><span class="dark">Description:</span>Lorem ipsum dolor sit amet.</p>
+            <p class="light"><span class="dark">Date&Time:</span><span class="date">Sunday 26 Nov 2023 6.00pm onwards</span></p>
+            <p class="light"><span class="dark">Venue:</span><span class="venue">Shiv Samarth Vidyalay ,Thane</span></p>
+
+            <div class="buttons">
+                <a href="#booking">BOOK</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="e-2">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="Images/music2.png" alt="">
+            <h3>music2</h3>
+            <div class="price"><span class="dark">Price:Rs</span>699</div>
+            <p class="light"><span class="dark">Description:</span>Lorem ipsum dolor sit amet.</p>
+            <p class="light"><span class="dark">Date&Time:</span><span class="date">Sunday 26 Nov 2023 6.00pm onwards</span></p>
+            <p class="light"><span class="dark">Venue:</span><span class="venue">Shiv Samarth Vidyalay ,Thane</span></p>
+
+            <div class="buttons">
+                <a href="#booking">BOOK</a>
+            </div>
+        </div>
+
+        <div class="preview" data-target="e-3">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="Images/music3.png" alt="">
+            <h3>music3</h3>
+            <div class="price"><span class="dark">Price: Rs</span>699</div>
+            <p class="light"><span class="dark">Description:</span>Lorem ipsum dolor sit amet.</p>
+            <p class="light"><span class="dark">Date&Time:</span><span class="date">Sunday 26 Nov 2023 6.00pm onwards</span></p>
+            <p class="light"><span class="dark">Venue:</span><span class="venue">Shiv Samarth Vidyalay ,Thane</span></p>
+
+            <div class="buttons">
+                <a href="#booking">Book</a>
+            </div>
+        </div>
+        <div class="preview" data-target="e-4">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="Images/comedy1.png" alt="">
+            <h3>comedy1</h3>
+            <div class="price"><span class="dark">Price: Rs</span>699</div>
+            <p class="light"><span class="dark">Description:</span>Lorem ipsum dolor sit amet.</p>
+            <p class="light"><span class="dark">Date&Time:</span><span class="date">Sunday 26 Nov 2023 6.00pm onwards</span></p>
+            <p class="light"><span class="dark">Venue:</span><span class="venue">Shiv Samarth Vidyalay ,Thane</span></p>
+
+            <div class="buttons">
+                <a href="#booking">BOOK</a>
+            </div>
+        </div>
+        <div class="preview" data-target="e-5">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="Images/comedy2.png" alt="">
+            <h3>comedy2</h3>
+            <div class="price"><span class="dark">Price: Rs</span>699</div>
+            <p class="light"><span class="dark">Description:</span>Lorem ipsum dolor sit amet.</p>
+            <p class="light"><span class="dark">Date&Time:</span><span class="date">Sunday 26 Nov 2023 6.00pm onwards</span></p>
+            <p class="light"><span class="dark">Venue:</span><span class="venue">Shiv Samarth Vidyalay ,Thane</span></p>
+
+            <div class="buttons">
+                <a href="#booking">Book</a>
+            </div>
+        </div>
+        <div class="preview" data-target="e-6">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="Images/comedy3.png" alt="">
+            <h3>comedy3</h3>
+            <div class="price"><span class="dark">Price: Rs</span>699</div>
+            <p class="light"><sOOK class="dark">Description:</sOOK>Lorem ipsum dolor sit amet.</p>
+            <p class="light"><span class="dark">Date&Time:</span><span class="date">Sunday 26 Nov 2023 6.00pm onwards</span></p>
+            <p class="light"><span class="dark">Venue:</span><span class="venue">Shiv Samarth Vidyalay ,Thane</span></p>
+
+            <div class="buttons">
+                <a href="#booking">BOOK</a>
+            </div>
+        </div>
+        <div class="preview" data-target="e-7">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="Images/sports1.png" alt="">
+            <h3>sports1</h3>
+            <div class="price"><span class="dark">Price: Rs</span>699</div>
+            <p class="light"><span class="dark">Description:</span>Lorem ipsum dolor sit amet.</p>
+            <p class="light"><span class="dark">Date&Time:</span><span class="date">Sunday 26 Nov 2023 6.00pm onwards</span></p>
+            <p class="light"><span class="dark">Venue:</span><span class="venue">Shiv Samarth Vidyalay ,Thane</span></p>
+
+            <div class="buttons">
+                <a href="#booking">BOOK</a>
+            </div>
+        </div>
+        <div class="preview" data-target="e-8">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="Images/sports2.png" alt="">
+            <h3>sports2</h3>
+            <div class="price"><span class="dark">Price: Rs</span>699</div>
+            <p class="light"><span class="dark">Description:</span>Lorem ipsum dolor sit amet.</p>
+            <p class="light"><span class="dark">Date&Time:</span><span class="date">Sunday 26 Nov 2023 6.00pm onwards</span></p>
+            <p class="light"><span class="dark">Venue:</span><span class="venue">Shiv Samarth Vidyalay ,Thane</span></p>
+
+            <div class="buttons">
+                <a href="#booking">BOOK</a>
+            </div>
+        </div>
+        <div class="preview" data-target="e-9">
+            <i class="fa-solid fa-xmark"></i>
+            <img src="Images/sports3.png" alt="">
+            <h3>sports3booking</h3>
+            <div class="price"><span class="dark">Price: Rs</span>699</div>
+            <p class="light"><span class="dark">Description:</span>Lorem ipsum dolor sit amet.</p>
+            <p class="light"><span class="dark">Date&Time:</span><span class="date">Sunday 26 Nov 2023 6.00pm onwards</span></p>
+            <p class="light"><span class="dark">Venue:</span><span class="venue">Shiv Samarth Vidyalay ,Thane</span></p>
+
+            <div class="buttons">
+                <a href="#booking">BOOK</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="booking">
+        <ul class="status">
+            <li><div class="seat available"></div><span>Available</span></li>
+            <li><div class="seat selected"></div><span>Selected</span></li>
+            <li><div class="seat occupied"></div><span>Occupied</span></li>
+        </ul>
+        <div class="bookingContainer">
+            <div class="screen"></div>
+
+            <div class="row">
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+        </div>
+        <p class="text">
+            You have selected <span id="count">0</span> seats for price of Rs <span id="total">0</span> for <span id="event-name"></span>
+        </p>
+        <p class="warning">Please select some seats to proceed</p>
+        
+            <a href="#yourbookings"><button class="book">Book</button></a>
+        
+    </section>
+    <section id="yourbookings">
+       <table class="table">
+        <tr class="table-row">
+            <th>Sr No.</th>
+            <th>Event-name</th>
+            <th>Tickets</th>
+            <th>Venue</th>
+            <th>Date & Time</th>
+        </tr>
+       </table>
+       <p class="zero">No events booked yet!</p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
